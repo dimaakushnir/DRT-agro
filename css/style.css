@@ -10314,6 +10314,7 @@ h6 {
 }
 .item-slider-main-home__title {
   color: #fff;
+  max-width: 980px;
 }
 .item-slider-main-home__title:not(:last-child) {
   margin: 0 0 30px 0;
