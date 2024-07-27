@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Fertilizers</title>
 </head>
 
@@ -346,7 +347,7 @@
             </div>
         </header>
         <main class="fertilizers">
-            <section class="fertilizers__fullscreen fullscreen">
+            <section class="fertilizers__fullscreen fullscreen transparent">
                 <div class="fullscreen__media-block ibg">
                     <!-- <video autoplay muted loop playsinline>
                         <source src="img/video.mp4" type="video/mp4">
@@ -366,8 +367,10 @@
                                 </p>
                             </div>
                             <div class="fullscreen__btns">
-                                <a href="" class="fullscreen__btn btn btn_green">Наши продукты</a>
-                                <a href="" class="fullscreen__btn btn btn_white">Про нас</a>
+                                <a href="" class="fullscreen__btn btn btn_green link-scroll"
+                                    data-scroll="catalog-fertilizers">Наши продукты</a>
+                                <a href="" class="fullscreen__btn btn btn_white link-scroll" data-scroll="">Про
+                                    нас</a>
                             </div>
                         </div>
                     </div>
@@ -375,7 +378,7 @@
             </section>
             <section class="fertilizers__select-service select-service select-service_green">
                 <div class="select-service__container container">
-                    <div class="select-service__row">
+                    <div class="select-service__row wow animate__animated animate__fadeInUp">
                         <div class="select-service__content">
                             <h3 class="select-service__title h3">Выберите услугу</h3>
                             <div class="select-service__text text-big">
@@ -386,7 +389,7 @@
                             </div>
                         </div>
                         <div class="select-service__btns">
-                            <a href="" class="select-service__btn btn btn_green">
+                            <a href="" class="select-service__btn btn btn_white">
                                 <span class="btn__icon">
                                     <svg>
                                         <use xlink:href="#type-icon-3"></use>
@@ -406,10 +409,11 @@
                     </div>
                 </div>
             </section>
-            <section class="fertilizers__catalog catalog-fertilizers">
+            <section class="fertilizers__catalog catalog-fertilizers" id="catalog-fertilizers">
                 <div class="catalog-fertilizers__container container">
                     <div class="catalog-fertilizers__row">
-                        <div class="catalog-fertilizers__column catalog-fertilizers__column_first">
+                        <div
+                            class="catalog-fertilizers__column catalog-fertilizers__column_first wow animate__animated animate__fadeInUp">
                             <div
                                 class="catalog-fertilizers__item item-catalog-fertilizers item-catalog-fertilizers_first">
                                 <h2 class="catalog-fertilizers__title h2">Каталог удобрений</h2>
@@ -421,7 +425,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="catalog-fertilizers__column">
+                        <div class="catalog-fertilizers__column wow animate__animated animate__fadeInUp">
                             <div class="catalog-fertilizers__item item-catalog-fertilizers">
                                 <div class="item-catalog-fertilizers__row">
                                     <a href="" class="item-catalog-fertilizers__image-block">
@@ -442,7 +446,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="catalog-fertilizers__column">
+                        <div class="catalog-fertilizers__column wow animate__animated animate__fadeInUp">
                             <div class="catalog-fertilizers__item item-catalog-fertilizers">
                                 <div class="item-catalog-fertilizers__row">
                                     <a href="" class="item-catalog-fertilizers__image-block">
@@ -463,7 +467,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="catalog-fertilizers__column">
+                        <div class="catalog-fertilizers__column wow animate__animated animate__fadeInUp">
                             <div class="catalog-fertilizers__item item-catalog-fertilizers">
                                 <div class="item-catalog-fertilizers__row">
                                     <a href="" class="item-catalog-fertilizers__image-block">
@@ -484,7 +488,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="catalog-fertilizers__column">
+                        <div class="catalog-fertilizers__column wow animate__animated animate__fadeInUp">
                             <div class="catalog-fertilizers__item item-catalog-fertilizers">
                                 <div class="item-catalog-fertilizers__row">
                                     <a href="" class="item-catalog-fertilizers__image-block">
@@ -505,7 +509,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="catalog-fertilizers__column">
+                        <div class="catalog-fertilizers__column wow animate__animated animate__fadeInUp">
                             <div class="catalog-fertilizers__item item-catalog-fertilizers">
                                 <div class="item-catalog-fertilizers__row">
                                     <a href="" class="item-catalog-fertilizers__image-block">
@@ -526,7 +530,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="catalog-fertilizers__column">
+                        <div class="catalog-fertilizers__column wow animate__animated animate__fadeInUp">
                             <div class="catalog-fertilizers__item item-catalog-fertilizers">
                                 <div class="item-catalog-fertilizers__row">
                                     <a href="" class="item-catalog-fertilizers__image-block">
@@ -547,7 +551,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="catalog-fertilizers__column">
+                        <div class="catalog-fertilizers__column wow animate__animated animate__fadeInUp">
                             <div class="catalog-fertilizers__item item-catalog-fertilizers">
                                 <div class="item-catalog-fertilizers__row">
                                     <a href="" class="item-catalog-fertilizers__image-block">
@@ -574,157 +578,168 @@
             <section class="fertilizers__select-culture select-culture">
                 <div class="select-culture__container container">
                     <div class="select-culture__body">
-                        <h2 class="select-culture__title h2">Выберите культуру</h2>
+                        <h2 class="select-culture__title h2 wow animate__animated animate__fadeInUp">Выберите культуру
+                        </h2>
                         <div class="select-culture__row">
-                            <div class="select-culture__column select-culture__column_small">
-                                <div class="select-culture__item item-select-culture">
+                            <div
+                                class="select-culture__column select-culture__column_small wow animate__animated animate__fadeInUp">
+                                <a href="" class="select-culture__item item-select-culture">
                                     <div class="item-select-culture__image ibg">
                                         <img src="img/cultutes/01.jpg" alt="Пшено">
                                     </div>
-                                    <a href="" class="item-select-culture__btn btn btn-arrow btn_white">
+                                    <span class="item-select-culture__btn btn btn-arrow btn_white">
                                         Пшено
                                         <span class="btn-arrow__icon">
                                             <svg>
                                                 <use xlink:href="#arrow"></use>
                                             </svg>
                                         </span>
-                                    </a>
-                                </div>
+                                    </span>
+                                </a>
                             </div>
-                            <div class="select-culture__column select-culture__column_small">
-                                <div class="select-culture__item item-select-culture">
+                            <div
+                                class="select-culture__column select-culture__column_small wow animate__animated animate__fadeInUp">
+                                <a href="" class="select-culture__item item-select-culture">
                                     <div class="item-select-culture__image ibg">
                                         <img src="img/cultutes/02.jpg" alt="Кукуруза">
                                     </div>
-                                    <a href="" class="item-select-culture__btn btn btn-arrow btn_white">
+                                    <span class="item-select-culture__btn btn btn-arrow btn_white">
                                         Кукуруза
                                         <span class="btn-arrow__icon">
                                             <svg>
                                                 <use xlink:href="#arrow"></use>
                                             </svg>
                                         </span>
-                                    </a>
-                                </div>
+                                    </span>
+                                </a>
                             </div>
-                            <div class="select-culture__column select-culture__column_small">
-                                <div class="select-culture__item item-select-culture">
+                            <div
+                                class="select-culture__column select-culture__column_small wow animate__animated animate__fadeInUp">
+                                <a href="" class="select-culture__item item-select-culture">
                                     <div class="item-select-culture__image ibg">
                                         <img src="img/cultutes/03.jpg" alt="Свекла">
                                     </div>
-                                    <a href="" class="item-select-culture__btn btn btn-arrow btn_white">
+                                    <span class="item-select-culture__btn btn btn-arrow btn_white">
                                         Свекла
                                         <span class="btn-arrow__icon">
                                             <svg>
                                                 <use xlink:href="#arrow"></use>
                                             </svg>
                                         </span>
-                                    </a>
-                                </div>
+                                    </span>
+                                </a>
                             </div>
-                            <div class="select-culture__column select-culture__column_small">
-                                <div class="select-culture__item item-select-culture">
+                            <div
+                                class="select-culture__column select-culture__column_small wow animate__animated animate__fadeInUp">
+                                <a href="" class="select-culture__item item-select-culture">
                                     <div class="item-select-culture__image ibg">
                                         <img src="img/cultutes/04.jpg" alt="Картошка">
                                     </div>
-                                    <a href="" class="item-select-culture__btn btn btn-arrow btn_white">
+                                    <span class="item-select-culture__btn btn btn-arrow btn_white">
                                         Картошка
                                         <span class="btn-arrow__icon">
                                             <svg>
                                                 <use xlink:href="#arrow"></use>
                                             </svg>
                                         </span>
-                                    </a>
-                                </div>
+                                    </span>
+                                </a>
                             </div>
-                            <div class="select-culture__column select-culture__column_small">
-                                <div class="select-culture__item item-select-culture">
+                            <div
+                                class="select-culture__column select-culture__column_small wow animate__animated animate__fadeInUp">
+                                <a href="" class="select-culture__item item-select-culture">
                                     <div class="item-select-culture__image ibg">
                                         <img src="img/cultutes/05.jpg" alt="Соя">
                                     </div>
-                                    <a href="" class="item-select-culture__btn btn btn-arrow btn_white">
+                                    <span class="item-select-culture__btn btn btn-arrow btn_white">
                                         Соя
                                         <span class="btn-arrow__icon">
                                             <svg>
                                                 <use xlink:href="#arrow"></use>
                                             </svg>
                                         </span>
-                                    </a>
-                                </div>
+                                    </span>
+                                </a>
                             </div>
-                            <div class="select-culture__column select-culture__column_small">
-                                <div class="select-culture__item item-select-culture">
+                            <div
+                                class="select-culture__column select-culture__column_small wow animate__animated animate__fadeInUp">
+                                <a href="" class="select-culture__item item-select-culture">
                                     <div class="item-select-culture__image ibg">
                                         <img src="img/cultutes/06.jpg" alt="Репа">
                                     </div>
-                                    <a href="" class="item-select-culture__btn btn btn-arrow btn_white">
+                                    <span class="item-select-culture__btn btn btn-arrow btn_white">
                                         Репа
                                         <span class="btn-arrow__icon">
                                             <svg>
                                                 <use xlink:href="#arrow"></use>
                                             </svg>
                                         </span>
-                                    </a>
-                                </div>
+                                    </span>
+                                </a>
                             </div>
-                            <div class="select-culture__column select-culture__column_small">
-                                <div class="select-culture__item item-select-culture">
+                            <div
+                                class="select-culture__column select-culture__column_small wow animate__animated animate__fadeInUp">
+                                <a href="" class="select-culture__item item-select-culture">
                                     <div class="item-select-culture__image ibg">
                                         <img src="img/cultutes/07.jpg" alt="Ячмень">
                                     </div>
-                                    <a href="" class="item-select-culture__btn btn btn-arrow btn_white">
+                                    <span class="item-select-culture__btn btn btn-arrow btn_white">
                                         Ячмень
                                         <span class="btn-arrow__icon">
                                             <svg>
                                                 <use xlink:href="#arrow"></use>
                                             </svg>
                                         </span>
-                                    </a>
-                                </div>
+                                    </span>
+                                </a>
                             </div>
-                            <div class="select-culture__column select-culture__column_small">
-                                <div class="select-culture__item item-select-culture">
+                            <div
+                                class="select-culture__column select-culture__column_small wow animate__animated animate__fadeInUp">
+                                <a href="" class="select-culture__item item-select-culture">
                                     <div class="item-select-culture__image ibg">
                                         <img src="img/cultutes/08.jpg" alt="Подсолнух">
                                     </div>
-                                    <a href="" class="item-select-culture__btn btn btn-arrow btn_white">
+                                    <span class="item-select-culture__btn btn btn-arrow btn_white">
                                         Подсолнух
                                         <span class="btn-arrow__icon">
                                             <svg>
                                                 <use xlink:href="#arrow"></use>
                                             </svg>
                                         </span>
-                                    </a>
-                                </div>
+                                    </span>
+                                </a>
                             </div>
-                            <div class="select-culture__column select-culture__column_big">
-                                <div class="select-culture__item item-select-culture">
+                            <div
+                                class="select-culture__column select-culture__column_big wow animate__animated animate__fadeInUp">
+                                <a href="" class="select-culture__item item-select-culture">
                                     <div class="item-select-culture__image ibg">
                                         <img src="img/cultutes/09.jpg" alt="Ягоды и фрукты">
                                     </div>
-                                    <a href="" class="item-select-culture__btn btn btn-arrow btn_white">
+                                    <span class="item-select-culture__btn btn btn-arrow btn_white">
                                         Ягоды и фрукты
                                         <span class="btn-arrow__icon">
                                             <svg>
                                                 <use xlink:href="#arrow"></use>
                                             </svg>
                                         </span>
-                                    </a>
-                                </div>
+                                    </span>
+                                </a>
                             </div>
-                            <div class="select-culture__column select-culture__column_big">
-                                <div class="select-culture__item item-select-culture">
+                            <div
+                                class="select-culture__column select-culture__column_big wow animate__animated animate__fadeInUp">
+                                <a href="" class="select-culture__item item-select-culture">
                                     <div class="item-select-culture__image ibg">
                                         <img src="img/cultutes/10.jpg" alt="Овощи">
                                     </div>
-                                    <a href="" class="item-select-culture__btn btn btn-arrow btn_white">
+                                    <span class="item-select-culture__btn btn btn-arrow btn_white">
                                         Овощи
                                         <span class="btn-arrow__icon">
                                             <svg>
                                                 <use xlink:href="#arrow"></use>
                                             </svg>
                                         </span>
-                                    </a>
-                                </div>
+                                    </span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -734,11 +749,12 @@
                 <div class="news-events__body">
                     <div class="news-events__container container">
                         <div class="news-events__row">
-                            <div class="news-events__column news-events__column_news">
+                            <div
+                                class="news-events__column news-events__column_news wow animate__animated animate__fadeInUp">
                                 <h4 class="news-events__title h4">Новости</h4>
                                 <div class="news-events__items">
                                     <div class="news-events__item item-news-events item-news-events_green">
-                                        <a href="" class="item-news-events__image-block">
+                                        <a href="news_post.html" class="item-news-events__image-block">
                                             <div class="item-news-events__image ibg">
                                                 <img src="img/news-events/03.jpg" alt="news">
                                             </div>
@@ -748,7 +764,7 @@
                                                 <a href="" class="item-news-events__label text-small">Категория</a>
                                                 <div class="item-news-events__time text-small">5 min read</div>
                                             </div>
-                                            <a href="" class="item-news-events__title">
+                                            <a href="news_post.html" class="item-news-events__title">
                                                 Blog title heading will go here
                                             </a>
                                             <div class="item-news-events__text text-small">
@@ -760,7 +776,7 @@
                                         </div>
                                     </div>
                                     <div class="news-events__item item-news-events item-news-events_green">
-                                        <a href="" class="item-news-events__image-block">
+                                        <a href="news_post.html" class="item-news-events__image-block">
                                             <div class="item-news-events__image ibg">
                                                 <img src="img/news-events/03.jpg" alt="news">
                                             </div>
@@ -770,7 +786,7 @@
                                                 <a href="" class="item-news-events__label text-small">Категория</a>
                                                 <div class="item-news-events__time text-small">5 min read</div>
                                             </div>
-                                            <a href="" class="item-news-events__title">
+                                            <a href="news_post.html" class="item-news-events__title">
                                                 Blog title heading will go here
                                             </a>
                                             <div class="item-news-events__text text-small">
@@ -782,7 +798,7 @@
                                         </div>
                                     </div>
                                     <div class="news-events__item item-news-events item-news-events_green">
-                                        <a href="" class="item-news-events__image-block">
+                                        <a href="news_post.html" class="item-news-events__image-block">
                                             <div class="item-news-events__image ibg">
                                                 <img src="img/news-events/03.jpg" alt="news">
                                             </div>
@@ -792,7 +808,7 @@
                                                 <a href="" class="item-news-events__label text-small">Категория</a>
                                                 <div class="item-news-events__time text-small">5 min read</div>
                                             </div>
-                                            <a href="" class="item-news-events__title">
+                                            <a href="news_post.html" class="item-news-events__title">
                                                 Blog title heading will go here
                                             </a>
                                             <div class="item-news-events__text text-small">
@@ -805,7 +821,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="news-events__column news-events__column_events">
+                            <div
+                                class="news-events__column news-events__column_events wow animate__animated animate__fadeInUp">
                                 <h4 class="news-events__title h4">Мероприятия</h4>
                                 <div class="news-events__items">
                                     <div class="news-events__item item-news-events">
@@ -918,86 +935,17 @@
             <nav class="top-footer__menu menu-footer">
                 <ul class="menu-footer__list">
                     <li class="menu-footer__item menu-footer__item_blue">
-                        <a href="" class="menu-footer__link menu-footer__link_submenu">
+                        <a href="" class="menu-footer__link">
                             Системы полива
-                            <span class="menu-footer__link_arrow">
-                                <svg>
-                                    <use xlink:href="#arrow-dropdown"></use>
-                                </svg>
-                            </span>
                         </a>
-                        <span class="menu-footer__dropdown-block">
-                            <span class="menu-footer__dropdown-top"></span>
-                            <nav class="menu-footer__dropdown dropdown-menu-footer">
-                                <ul class="dropdown-menu-footer__list">
-                                    <li class="dropdown-menu-footer__item dropdown-menu-footer__item_mobile">
-                                        <a href="" class="dropdown-menu-footer__link">Системы полива</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Капельное орошение</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Пивот системы</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Фильтры</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Автоматизация / <br>
-                                            Цифровое решение
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </span>
                     </li>
                     <li class="menu-footer__item menu-footer__item_green">
-                        <a href="" class="menu-footer__link menu-footer__link_submenu">
+                        <a href="" class="menu-footer__link">
                             Каталог удобрений
-                            <span class="menu-footer__link_arrow">
-                                <svg>
-                                    <use xlink:href="#arrow-dropdown"></use>
-                                </svg>
-                            </span>
                         </a>
-                        <span class="menu-footer__dropdown-block">
-                            <span class="menu-footer__dropdown-top"></span>
-                            <nav class="menu-footer__dropdown dropdown-menu-footer">
-                                <ul class="dropdown-menu-footer__list">
-                                    <li class="dropdown-menu-footer__item dropdown-menu-footer__item_mobile">
-                                        <a href="" class="dropdown-menu-footer__link">Каталог удобрений</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Специальные
-                                            удобрения</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Прямые удобрения</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Комплексные NPK</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Водорастворимые</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Фолиарные \
-                                            Лиственные</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">
-                                            Биостимулянты \ Антистресанты
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Для фертигации </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </span>
                     </li>
-                    <li class="menu-footer__item">
-                        <a href="" class="menu-footer__link">Официальные дистрибьюторы</a>
+                    <li class="menu-footer__item menu-footer__item_red">
+                        <a href="consulting.html" class="menu-footer__link">Консалтинг</a>
                     </li>
                     <li class="menu-footer__item">
                         <a href="" class="menu-footer__link">Про нас</a>
@@ -1040,14 +988,14 @@
             <div class="bottom-footer__seo seo-footer">
                 <div class="seo-footer__top top-seo-footer">
                     <div class="top-seo-footer__title">SEO text</div>
-                    <div class="top-seo-footer__arrow">
+                    <a href="" class="top-seo-footer__arrow">
                         <svg>
                             <use xlink:href="#arrow-faq"></use>
                         </svg>
-                    </div>
+                    </a>
                 </div>
                 <div class="seo-footer__body">
-                    <div class="seo-footer__text text-small">
+                    <div class="seo-footer__text text-small preview">
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
                             elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
@@ -1086,6 +1034,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.9/dist/jquery.inputmask.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="js/app.min.js"></script>
 </body>
 

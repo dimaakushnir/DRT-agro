@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Fertilizers Detail</title>
 </head>
 
@@ -373,7 +374,7 @@
             </div>
         </header>
         <main class="fertilizers-detail">
-            <section class="fertilizers-detail__fullscreen fullscreen">
+            <section class="fertilizers-detail__fullscreen fullscreen transparent">
                 <div class="fullscreen__media-block ibg">
                     <!-- <video autoplay muted loop playsinline>
                         <source src="img/video.mp4" type="video/mp4">
@@ -403,20 +404,22 @@
                                 </p>
                             </div>
                             <div class="fullscreen__btns">
-                                <a href="" class="fullscreen__btn btn btn_green">Наши продукты</a>
-                                <a href="" class="fullscreen__btn btn btn_white">Про нас</a>
+                                <a href="" class="fullscreen__btn btn btn_green link-scroll"
+                                    data-scroll="catalog-filters">Наши продукты</a>
+                                <a href="" class="fullscreen__btn btn btn_white link-scroll" data-scroll="more">Про
+                                    нас</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="fertilizers-detail__more more more__green">
+            <section class="fertilizers-detail__more more more__green before" id="more">
                 <div class="more__container container">
                     <div class="more__row">
-                        <h4 class="more__title h4">
+                        <h4 class="more__title h4 wow animate__animated animate__fadeInUp">
                             Подробнее про cпециальные удобрения 
                         </h4>
-                        <div class="more__content">
+                        <div class="more__content wow animate__animated animate__fadeInUp">
                             <div class="more__text text-small">
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
@@ -452,9 +455,9 @@
                     </div>
                 </div>
             </section>
-            <section class="fertilizers-detail__catalog catalog catalog-filters">
+            <section class="fertilizers-detail__catalog catalog catalog-filters" id="catalog-filters">
                 <div class="catalog__container container">
-                    <div class="catalog__top top-catalog top-catalog_input">
+                    <div class="catalog__top top-catalog top-catalog_input wow animate__animated animate__fadeInUp">
                         <h2 class="top-catalog__title h2">Каталог</h2>
                         <form action="#" class="top-catalog__form form-top-catalog">
                             <div class="form-top-catalog__item item-form-top-catalog">
@@ -468,7 +471,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="catalog__filters filters-catalog">
+                    <div class="catalog__filters filters-catalog wow animate__animated animate__fadeInUp">
                         <div class="filters-catalog__row">
                             <div class="filters-catalog__column">
                                 <div class="filters-catalog__item item-filters-catalog item-filters-catalog_1">
@@ -679,7 +682,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="catalog__row">
+                    <div class="catalog__row wow animate__animated animate__fadeInUp">
                         <div class="catalog__column" data-filter-1="" data-filter-2="" data-filter-3="">
                             <div class="catalog__item item-catalog item-catalog_green">
                                 <a href="about-product.html" class="item-catalog__image-block">
@@ -892,7 +895,7 @@
                 </div>
             </section>
             <div class="fertilizers-detail__about about-product about-product_green">
-                <h2 class="about-product__title h2">Наши преимущества</h2>
+                <h2 class="about-product__title h2 wow animate__animated animate__fadeInUp">Наши преимущества</h2>
                 <div class="about-product__inner">
                     <div class="about-product__image-block">
                         <div class="about-product__image ibg">
@@ -902,7 +905,7 @@
                     <div class="about-product__body">
                         <div class="about-product__container container">
                             <div class="about-product__row">
-                                <div class="about-product__column">
+                                <div class="about-product__column wow animate__animated animate__fadeInUp">
                                     <div class="about-product__item item-about-product">
                                         <div class="item-about-product__top top-item-about-product">
                                             <div class="top-item-about-product__icon">
@@ -923,7 +926,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="about-product__column">
+                                <div class="about-product__column wow animate__animated animate__fadeInUp">
                                     <div class="about-product__item item-about-product">
                                         <div class="item-about-product__top top-item-about-product">
                                             <div class="top-item-about-product__icon">
@@ -945,7 +948,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="about-product__column">
+                                <div class="about-product__column wow animate__animated animate__fadeInUp">
                                     <div class="about-product__item item-about-product">
                                         <div class="item-about-product__top top-item-about-product">
                                             <div class="top-item-about-product__icon">
@@ -971,7 +974,7 @@
                     </div>
                 </div>
             </div>
-            <section class="fertilizers-detail__consultation consultation">
+            <section class="fertilizers-detail__consultation consultation wow animate__animated animate__fadeInUp">
                 <div class="consultation__image ibg">
                     <img src="img/consultation/bg.svg" alt="consultation">
                 </div>
@@ -1012,7 +1015,8 @@
             <section class="fertilizers-detail__catalog-fertilizers catalog-fertilizers">
                 <div class="catalog-fertilizers__container container">
                     <div class="catalog-fertilizers__row">
-                        <div class="catalog-fertilizers__column catalog-fertilizers__column_first">
+                        <div
+                            class="catalog-fertilizers__column catalog-fertilizers__column_first wow animate__animated animate__fadeInUp">
                             <div
                                 class="catalog-fertilizers__item item-catalog-fertilizers item-catalog-fertilizers_first">
                                 <h2 class="catalog-fertilizers__title h2">Другие продукты</h2>
@@ -1024,7 +1028,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="catalog-fertilizers__column">
+                        <div class="catalog-fertilizers__column wow animate__animated animate__fadeInUp">
                             <div class="catalog-fertilizers__item item-catalog-fertilizers">
                                 <div class="item-catalog-fertilizers__row">
                                     <a href="" class="item-catalog-fertilizers__image-block">
@@ -1045,7 +1049,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="catalog-fertilizers__column">
+                        <div class="catalog-fertilizers__column wow animate__animated animate__fadeInUp">
                             <div class="catalog-fertilizers__item item-catalog-fertilizers">
                                 <div class="item-catalog-fertilizers__row">
                                     <a href="" class="item-catalog-fertilizers__image-block">
@@ -1066,7 +1070,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="catalog-fertilizers__column">
+                        <div class="catalog-fertilizers__column wow animate__animated animate__fadeInUp">
                             <div class="catalog-fertilizers__item item-catalog-fertilizers">
                                 <div class="item-catalog-fertilizers__row">
                                     <a href="" class="item-catalog-fertilizers__image-block">
@@ -1087,7 +1091,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="catalog-fertilizers__column">
+                        <div class="catalog-fertilizers__column wow animate__animated animate__fadeInUp">
                             <div class="catalog-fertilizers__item item-catalog-fertilizers">
                                 <div class="item-catalog-fertilizers__row">
                                     <a href="" class="item-catalog-fertilizers__image-block">
@@ -1108,7 +1112,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="catalog-fertilizers__column">
+                        <div class="catalog-fertilizers__column wow animate__animated animate__fadeInUp">
                             <div class="catalog-fertilizers__item item-catalog-fertilizers">
                                 <div class="item-catalog-fertilizers__row">
                                     <a href="" class="item-catalog-fertilizers__image-block">
@@ -1129,7 +1133,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="catalog-fertilizers__column">
+                        <div class="catalog-fertilizers__column wow animate__animated animate__fadeInUp">
                             <div class="catalog-fertilizers__item item-catalog-fertilizers">
                                 <div class="item-catalog-fertilizers__row">
                                     <a href="" class="item-catalog-fertilizers__image-block">
@@ -1150,7 +1154,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="catalog-fertilizers__column">
+                        <div class="catalog-fertilizers__column wow animate__animated animate__fadeInUp">
                             <div class="catalog-fertilizers__item item-catalog-fertilizers">
                                 <div class="item-catalog-fertilizers__row">
                                     <a href="" class="item-catalog-fertilizers__image-block">
@@ -1191,86 +1195,17 @@
             <nav class="top-footer__menu menu-footer">
                 <ul class="menu-footer__list">
                     <li class="menu-footer__item menu-footer__item_blue">
-                        <a href="" class="menu-footer__link menu-footer__link_submenu">
+                        <a href="" class="menu-footer__link">
                             Системы полива
-                            <span class="menu-footer__link_arrow">
-                                <svg>
-                                    <use xlink:href="#arrow-dropdown"></use>
-                                </svg>
-                            </span>
                         </a>
-                        <span class="menu-footer__dropdown-block">
-                            <span class="menu-footer__dropdown-top"></span>
-                            <nav class="menu-footer__dropdown dropdown-menu-footer">
-                                <ul class="dropdown-menu-footer__list">
-                                    <li class="dropdown-menu-footer__item dropdown-menu-footer__item_mobile">
-                                        <a href="" class="dropdown-menu-footer__link">Системы полива</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Капельное орошение</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Пивот системы</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Фильтры</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Автоматизация / <br>
-                                            Цифровое решение
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </span>
                     </li>
                     <li class="menu-footer__item menu-footer__item_green">
-                        <a href="" class="menu-footer__link menu-footer__link_submenu">
+                        <a href="" class="menu-footer__link">
                             Каталог удобрений
-                            <span class="menu-footer__link_arrow">
-                                <svg>
-                                    <use xlink:href="#arrow-dropdown"></use>
-                                </svg>
-                            </span>
                         </a>
-                        <span class="menu-footer__dropdown-block">
-                            <span class="menu-footer__dropdown-top"></span>
-                            <nav class="menu-footer__dropdown dropdown-menu-footer">
-                                <ul class="dropdown-menu-footer__list">
-                                    <li class="dropdown-menu-footer__item dropdown-menu-footer__item_mobile">
-                                        <a href="" class="dropdown-menu-footer__link">Каталог удобрений</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Специальные
-                                            удобрения</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Прямые удобрения</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Комплексные NPK</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Водорастворимые</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Фолиарные \
-                                            Лиственные</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">
-                                            Биостимулянты \ Антистресанты
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Для фертигации </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </span>
                     </li>
-                    <li class="menu-footer__item">
-                        <a href="" class="menu-footer__link">Официальные дистрибьюторы</a>
+                    <li class="menu-footer__item menu-footer__item_red">
+                        <a href="consulting.html" class="menu-footer__link">Консалтинг</a>
                     </li>
                     <li class="menu-footer__item">
                         <a href="" class="menu-footer__link">Про нас</a>
@@ -1313,14 +1248,14 @@
             <div class="bottom-footer__seo seo-footer">
                 <div class="seo-footer__top top-seo-footer">
                     <div class="top-seo-footer__title">SEO text</div>
-                    <div class="top-seo-footer__arrow">
+                    <a href="" class="top-seo-footer__arrow">
                         <svg>
                             <use xlink:href="#arrow-faq"></use>
                         </svg>
-                    </div>
+                    </a>
                 </div>
                 <div class="seo-footer__body">
-                    <div class="seo-footer__text text-small">
+                    <div class="seo-footer__text text-small preview">
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
                             elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
@@ -1359,6 +1294,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.9/dist/jquery.inputmask.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="js/app.min.js"></script>
 </body>
 

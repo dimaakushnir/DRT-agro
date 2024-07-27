@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Product</title>
 </head>
 
@@ -220,6 +221,37 @@
             </form>
         </div>
     </div>
+    <div class="popup popup-consultation popup-consultation-big popup-consultation_blue">
+        <div class="popup__body">
+            <div class="popup__content">
+                <h3 class="popup__title h3">Бесплатная консультация</h3>
+                <div class="popup__text text-medium">
+                    <p>
+                        Заполните форму и наш менеджер свяжется с Вами в течении 10 минут
+                    </p>
+                </div>
+                <form action="#" class="popup__form form">
+                    <div class="form__item item-form">
+                        <input placeholder="Ваше имя" autocomplete='off' type='text' name='form[]'
+                            class='item-form__input'>
+                    </div>
+                    <div class="form__item item-form">
+                        <input autocomplete="on" type="tel" name="form[]" class="item-form__input tel"
+                            placeholder="+380 __ - ___ - __ - __" required="" inputmode="text">
+                    </div>
+                    <div class="form__item item-form item-form_textarea">
+                        <textarea placeholder="Коментарий"
+                            class="item-form__input item-form__input_textarea"></textarea>
+                    </div>
+                    <button type='submit' class='form__btn btn btn_blue'>Отправить</button>
+                    <div class="form__agreement">
+                        Нажимая кнопку "Отправить", вы подтверждаете, что согласны с <a href="">Политикой
+                            конфиденциальности</a>
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
     </div>
     <div class="wrapper">
         <header class="header">
@@ -376,11 +408,11 @@
             <section class="product__main-advantages advantages advantages_blue">
                 <div class="advantages__container container">
                     <div class="advantages__row">
-                        <div class="advantages__media advantages__media_image">
+                        <div class="advantages__media advantages__media_image ">
                             <img src="img/catalog/01.jpg" alt="product-img">
                         </div>
                         <div class="advantages__content">
-                            <div class="breadcrumbs">
+                            <div class="breadcrumbs ">
                                 <ul class="breadcrumbs__list">
                                     <li>
                                         <a href="" class="breadcrumbs__link text-small">Системы полива</a>
@@ -393,17 +425,17 @@
                                     </li>
                                 </ul>
                             </div>
-                            <h4 class="advantages__title h4">
+                            <h4 class="advantages__title h4 ">
                                 Medium length section
                                 heading goes here
                             </h4>
-                            <div class="advantages__text text-medium">
+                            <div class="advantages__text text-medium ">
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
                                     Suspendisse varius enim in eros elementum tristique.
                                 </p>
                             </div>
-                            <div class="advantages__items">
+                            <div class="advantages__items ">
                                 <div class="advantages__item item-advantages">
                                     <div class="item-advantages__icon">
                                         <svg>
@@ -453,13 +485,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="advantages__btns">
+                            <div class="advantages__btns ">
                                 <a href="" class="advantages__btn btn btn_blue btn-consultation">
                                     Бесплатная кансультация
                                 </a>
-                                <a href="" class="advantages__btn btn btn_white">
+                                <!-- <a href="" class="advantages__btn btn btn_white">
                                     Узнать стоимость
-                                </a>
+                                </a> -->
                             </div>
                         </div>
                     </div>
@@ -475,7 +507,7 @@
                     <div class="about-product__body">
                         <div class="about-product__container container">
                             <div class="about-product__row">
-                                <div class="about-product__column">
+                                <div class="about-product__column wow animate__animated animate__fadeInUp">
                                     <div class="about-product__item item-about-product">
                                         <div class="item-about-product__top top-item-about-product">
                                             <div class="top-item-about-product__icon">
@@ -496,7 +528,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="about-product__column">
+                                <div class="about-product__column wow animate__animated animate__fadeInUp">
                                     <div class="about-product__item item-about-product">
                                         <div class="item-about-product__top top-item-about-product">
                                             <div class="top-item-about-product__icon">
@@ -518,7 +550,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="about-product__column">
+                                <div class="about-product__column wow animate__animated animate__fadeInUp">
                                     <div class="about-product__item item-about-product">
                                         <div class="item-about-product__top top-item-about-product">
                                             <div class="top-item-about-product__icon">
@@ -548,16 +580,18 @@
                 <div class="faqs__container container">
                     <div class="faqs__row">
                         <div class="faqs__content">
-                            <h2 class="faqs__title h2">Про продукт</h2>
-                            <div class="faqs__text text-small">
+                            <h2 class="faqs__title h2 wow animate__animated animate__fadeInUp">Про продукт</h2>
+                            <div class="faqs__text text-small wow animate__animated animate__fadeInUp">
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
                                     Suspendisse varius enim in eros elementum tristique.
                                 </p>
                             </div>
-                            <a href="" class="faqs__btn btn btn_black">Задать вопрос</a>
+                            <a href=""
+                                class="faqs__btn btn btn_black btn-consultation-big wow animate__animated animate__fadeInUp">Задать
+                                вопрос</a>
                         </div>
-                        <div class="faqs__items">
+                        <div class="faqs__items wow animate__animated animate__fadeInUp">
                             <div class="faqs__item item-faqs">
                                 <div class="item-faqs__top top-item-faqs">
                                     <div class="top-item-faqs__text">Question text goes here</div>
@@ -654,21 +688,21 @@
             </section>
             <section class="product__advantages advantages advantages_full advantages_blue">
                 <div class="advantages__row">
-                    <div class="advantages__media advantages__media_video">
+                    <div class="advantages__media advantages__media_video wow animate__animated animate__fadeInUp">
                         <iframe title="myFrame"
                             src="https://www.youtube.com/embed/2gAAQ8YpKL4?si=f8lw7SShGvafZTkr&amp;controls=0"></iframe>
                     </div>
                     <div class="advantages__content">
-                        <h4 class="advantages__title h4">
+                        <h4 class="advantages__title h4 wow animate__animated animate__fadeInUp">
                             Преимущества капельного орошения
                         </h4>
-                        <div class="advantages__text text-medium">
+                        <div class="advantages__text text-medium wow animate__animated animate__fadeInUp">
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
                                 Suspendisse varius enim in eros elementum tristique.
                             </p>
                         </div>
-                        <div class="advantages__items">
+                        <div class="advantages__items wow animate__animated animate__fadeInUp">
                             <div class="advantages__item item-advantages">
                                 <div class="item-advantages__icon">
                                     <svg>
@@ -724,14 +758,15 @@
             <section class="product__other-products other-products other-products_blue">
                 <div class="other-products__container container">
                     <div class="other-products__body">
-                        <h2 class="other-products__title h2">
+                        <h2 class="other-products__title h2 wow animate__animated animate__fadeInUp">
                             С этим продуктом так же выбирают
                         </h2>
-                        <div class="other-products__text text-small">
+                        <div class="other-products__text text-small wow animate__animated animate__fadeInUp">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
                             Suspendisse varius enim in eros elementum tristique.
                         </div>
-                        <div class="other-products__slider slider-other-products">
+                        <div
+                            class="other-products__slider slider-other-products wow animate__animated animate__fadeInUp">
                             <div class="slider-other-products__swiper swiper">
                                 <div class="slider-other-products__wrapper swiper-wrapper">
                                     <div class="slider-other-products__slide slide-slider-other-products swiper-slide">
@@ -869,86 +904,17 @@
             <nav class="top-footer__menu menu-footer">
                 <ul class="menu-footer__list">
                     <li class="menu-footer__item menu-footer__item_blue">
-                        <a href="" class="menu-footer__link menu-footer__link_submenu">
+                        <a href="" class="menu-footer__link">
                             Системы полива
-                            <span class="menu-footer__link_arrow">
-                                <svg>
-                                    <use xlink:href="#arrow-dropdown"></use>
-                                </svg>
-                            </span>
                         </a>
-                        <span class="menu-footer__dropdown-block">
-                            <span class="menu-footer__dropdown-top"></span>
-                            <nav class="menu-footer__dropdown dropdown-menu-footer">
-                                <ul class="dropdown-menu-footer__list">
-                                    <li class="dropdown-menu-footer__item dropdown-menu-footer__item_mobile">
-                                        <a href="" class="dropdown-menu-footer__link">Системы полива</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Капельное орошение</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Пивот системы</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Фильтры</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Автоматизация / <br>
-                                            Цифровое решение
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </span>
                     </li>
                     <li class="menu-footer__item menu-footer__item_green">
-                        <a href="" class="menu-footer__link menu-footer__link_submenu">
+                        <a href="" class="menu-footer__link">
                             Каталог удобрений
-                            <span class="menu-footer__link_arrow">
-                                <svg>
-                                    <use xlink:href="#arrow-dropdown"></use>
-                                </svg>
-                            </span>
                         </a>
-                        <span class="menu-footer__dropdown-block">
-                            <span class="menu-footer__dropdown-top"></span>
-                            <nav class="menu-footer__dropdown dropdown-menu-footer">
-                                <ul class="dropdown-menu-footer__list">
-                                    <li class="dropdown-menu-footer__item dropdown-menu-footer__item_mobile">
-                                        <a href="" class="dropdown-menu-footer__link">Каталог удобрений</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Специальные
-                                            удобрения</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Прямые удобрения</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Комплексные NPK</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Водорастворимые</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Фолиарные \
-                                            Лиственные</a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">
-                                            Биостимулянты \ Антистресанты
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-menu-footer__item">
-                                        <a href="" class="dropdown-menu-footer__link">Для фертигации </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </span>
                     </li>
-                    <li class="menu-footer__item">
-                        <a href="" class="menu-footer__link">Официальные дистрибьюторы</a>
+                    <li class="menu-footer__item menu-footer__item_red">
+                        <a href="consulting.html" class="menu-footer__link">Консалтинг</a>
                     </li>
                     <li class="menu-footer__item">
                         <a href="" class="menu-footer__link">Про нас</a>
@@ -991,14 +957,14 @@
             <div class="bottom-footer__seo seo-footer">
                 <div class="seo-footer__top top-seo-footer">
                     <div class="top-seo-footer__title">SEO text</div>
-                    <div class="top-seo-footer__arrow">
+                    <a href="" class="top-seo-footer__arrow">
                         <svg>
                             <use xlink:href="#arrow-faq"></use>
                         </svg>
-                    </div>
+                    </a>
                 </div>
                 <div class="seo-footer__body">
-                    <div class="seo-footer__text text-small">
+                    <div class="seo-footer__text text-small preview">
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
                             elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
@@ -1037,6 +1003,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.9/dist/jquery.inputmask.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="js/app.min.js"></script>
 </body>
 
