@@ -221,6 +221,109 @@
             </div>
         </div>
     </div>
+    <div class="popup popup-projects">
+        <div class="popup__body">
+            <div class="popup__content">
+                <div class="popup__row">
+                    <div class="popup__column">
+                        <div class="popup__main-slider main-slider-popup">
+                            <div class="swiper main-slider-popup__swiper">
+                                <div class="swiper-wrapper main-slider-popup__wrapper">
+                                    <div class="swiper-slide main-slider-popup__slide">
+                                        <div class="main-slider-popup__item">
+                                            <img src="img/projects/02.jpg" alt="project-img">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide main-slider-popup__slide">
+                                        <div class="main-slider-popup__item">
+                                            <img src="img/projects/02.jpg" alt="project-img">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide main-slider-popup__slide">
+                                        <div class="main-slider-popup__item">
+                                            <img src="img/projects/02.jpg" alt="project-img">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide main-slider-popup__slide">
+                                        <div class="main-slider-popup__item">
+                                            <img src="img/projects/02.jpg" alt="project-img">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide main-slider-popup__slide">
+                                        <div class="main-slider-popup__item">
+                                            <img src="img/projects/02.jpg" alt="project-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-slider-popup__navigation navigation">
+                                <div class="navigation__pagination main-slider-popup__pagination"></div>
+                                <div
+                                    class="navigation__btn navigation__btn-prev main-slider-popup__btn main-slider-popup__btn-prev">
+                                    <svg>
+                                        <use xlink:href="#arrow-slider"></use>
+                                    </svg>
+                                </div>
+                                <div
+                                    class="navigation__btn navigation__btn-next main-slider-popup__btn main-slider-popup__btn-next">
+                                    <svg>
+                                        <use xlink:href="#arrow-slider"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup__column">
+                        <div class="popup__project-info project-info-popup">
+                            <a href=""
+                                class="project-info-popup__category text-small project-info-popup__category_green">
+                                Удобрения
+                            </a>
+                            <div class="project-info-popup__title">Project name here</div>
+                            <div class="project-info-popup__text text-small">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend faucibus
+                                    vestibulum. Nunc vitae nulla eleifend, feugiat sem eget, consequat felis
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend faucibus
+                                    vestibulum. Nunc vitae nulla eleifend, feugiat sem eget, consequat felis
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper second-slider-popup__swiper">
+                            <div class="swiper-wrapper second-slider-popup__wrapper">
+                                <div class="swiper-slide second-slider-popup__slide">
+                                    <div class="second-slider-popup__item">
+                                        <img src="img/projects/02.jpg" alt="project-img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide second-slider-popup__slide">
+                                    <div class="second-slider-popup__item">
+                                        <img src="img/projects/02.jpg" alt="project-img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide second-slider-popup__slide">
+                                    <div class="second-slider-popup__item">
+                                        <img src="img/projects/02.jpg" alt="project-img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide second-slider-popup__slide">
+                                    <div class="second-slider-popup__item">
+                                        <img src="img/projects/02.jpg" alt="project-img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide second-slider-popup__slide">
+                                    <div class="second-slider-popup__item">
+                                        <img src="img/projects/02.jpg" alt="project-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="wrapper">
         <header class="header header_white">
@@ -404,14 +507,15 @@
                                 </p>
                             </div>
                             <div class="fullscreen__btns">
-                                <a href="" class="fullscreen__btn btn btn_blue">Заказать под ключ</a>
-                                <a href="" class="fullscreen__btn btn btn_white">Подробнее</a>
+                                <a href="" class="fullscreen__btn btn btn_blue btn-consultation">Заказать под ключ</a>
+                                <a href="" class="fullscreen__btn btn btn_white link-scroll"
+                                    data-scroll="more">Подробнее</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="filters__more more more__blue">
+            <section class="filters__more more more__blue before" id="more">
                 <div class="more__container container">
                     <div class="more__row">
                         <h4 class="more__title h4 wow animate__animated animate__fadeInUp">
@@ -469,7 +573,7 @@
                                     Suspendisse varius enim in eros elementum tristique.
                                 </p>
                             </div>
-                            <a href="" class="turnkey__btn btn btn_black">Бесплатная консультация</a>
+                            <a href="" class="turnkey__btn btn btn_black btn-consultation">Бесплатная консультация</a>
                         </div>
                     </div>
                 </div>
@@ -736,20 +840,20 @@
                     <div class="projects__row">
                         <div class="projects__column wow animate__animated animate__fadeInUp">
                             <div class="projects__item item-projects item-projects_blue">
-                                <a href="" class="item-projects__image-block">
+                                <a href="" class="item-projects__image-block open-popup-projects">
                                     <span class="item-projects__image ibg">
                                         <img src="img/projects/01.jpg" alt="project">
                                     </span>
                                     <span class="item-projects__label text-small">Пивот система</span>
                                 </a>
-                                <a href="" class="item-projects__name">Project name here</a>
+                                <a href="" class="item-projects__name open-popup-projects">Project name here</a>
                                 <div class="item-projects__text text-small">
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend faucibus
                                         vestibulum. Nunc vitae nulla eleifend, feugiat sem eget, consequat felis
                                     </p>
                                 </div>
-                                <a href="" class="item-projects__btn btn btn-arrow btn_blue">
+                                <a href="" class="item-projects__btn btn btn-arrow btn_blue open-popup-projects">
                                     Подробнее
                                     <span class="btn-arrow__icon">
                                         <svg>
@@ -761,20 +865,20 @@
                         </div>
                         <div class="projects__column wow animate__animated animate__fadeInUp">
                             <div class="projects__item item-projects item-projects_blue">
-                                <a href="" class="item-projects__image-block">
+                                <a href="" class="item-projects__image-block open-popup-projects">
                                     <span class="item-projects__image ibg">
                                         <img src="img/projects/02.jpg" alt="project">
                                     </span>
                                     <span class="item-projects__label text-small">Пивот система</span>
                                 </a>
-                                <a href="" class="item-projects__name">Project name here</a>
+                                <a href="" class="item-projects__name open-popup-projects">Project name here</a>
                                 <div class="item-projects__text text-small">
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend faucibus
                                         vestibulum. Nunc vitae nulla eleifend, feugiat sem eget, consequat felis
                                     </p>
                                 </div>
-                                <a href="" class="item-projects__btn btn btn-arrow btn_blue">
+                                <a href="" class="item-projects__btn btn btn-arrow btn_blue open-popup-projects">
                                     Подробнее
                                     <span class="btn-arrow__icon">
                                         <svg>
